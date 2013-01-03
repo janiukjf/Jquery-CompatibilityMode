@@ -8,7 +8,7 @@
 * projects under both MIT and GPL licenses. This means that you can choose 
 * the license that best suits your project, and use it accordingly.
 * 
-* // basic usage (just like .hover) receives onMouseOver and onMouseOut functions
+* // basic usage
 * $.CompatitibilityMode( callback );
 * 
 * @param  callback function || method to fire if compatibility mode tests true
