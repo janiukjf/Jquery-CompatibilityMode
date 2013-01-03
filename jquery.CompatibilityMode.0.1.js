@@ -2,7 +2,7 @@
 * CompatitibilityMode is designed to detect if the user is using Internet Explorer and if it
 * is running in compatibility mode
 *
-* popUp r1 // 2012.06.13 // jQuery 8.3+
+* CompatibilityMode r0.1 // 2013.01.03 // jQuery 1.8+
 *  
 * CompatibilityMode is currently available for use in all personal or commercial 
 * projects under both MIT and GPL licenses. This means that you can choose 
@@ -12,12 +12,11 @@
 * $.CompatitibilityMode( callback );
 * 
 * @param  callback function || method to fire if compatibility mode tests true
-* @param  g  onMouseOut function  || Nothing (use configuration options object)
 * @author    Jessica Janiuk
 */
 
 (function ($) {
-    $.fn.CompatibilityMode = function (callback) {
+    $.CompatibilityMode = function (callback) {
         // default configuration options
         if ($.browser.msie && ($.browser.version == '7.0' && navigator.userAgent.indexOf('Trident') != -1) || (document.documentMode != undefined && (Number($.browser.version) != Number(document.documentMode)))) {
             if(typeof callback == 'function') {
